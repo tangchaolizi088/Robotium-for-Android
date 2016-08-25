@@ -12,31 +12,31 @@ public class Transfer_Card  extends BaseClass{
 		String values;
 		String va;
 		solo.sleep(3000);
-		// »ñÈ¡ÕËºÅ½ğ¶î
+		// è·å–è´¦å·é‡‘é¢
 		values = this.getValue("textView4");
-		// ´òÓ¡µ±Ç°½ğ¶î
+		// æ‰“å°å½“å‰é‡‘é¢
 		Log.i(TAG, values);
-		// ·Ö¸îĞ¡ÊıµãÈ¡ÕûÊı
+		// åˆ†å‰²å°æ•°ç‚¹å–æ•´æ•°
 		value = values.split("\\.");
 		a = Integer.parseInt(value[0].trim());
-		solo.searchText("ÕË»§×Ü¶î");
+		solo.searchText("è´¦æˆ·æ€»é¢");
 		solo.sleep(3);
-		solo.clickOnText("ÕË»§×ªÕË");
+		solo.clickOnText("è´¦æˆ·è½¬è´¦");
 		this.clickByStringId("btn_transfer_to_bankcard", 1);
-		this.enterValueById("edt_bankno", "6222020200017828662", 1);
+		this.enterValueById("edt_bankno", "xxxxxxxxxxxx", 1);
 		//this.clickByStringId("text_bank_name", 2);
-		//solo.clickOnText("ÇëÑ¡Ôñ·¢¿¨ĞĞ");
+		//solo.clickOnText("è¯·é€‰æ‹©å‘å¡è¡Œ");
 		this.clickByStringId("text_bank_name", 3);
-		solo.clickOnText("ÖĞ¹ú¹¤ÉÌÒøĞĞ");
+		solo.clickOnText("ä¸­å›½å·¥å•†é“¶è¡Œ");
 		this.enterValueById("input_transfer_money", "1", 1);
 		this.clickByStringId("btn_transfer_next", 1);
 		this.clickByStringId("edt_payPwd", 1);
 		this.enterPayPwdHw();
 		this.clickByStringId("btn_commit_pay", 2);
 		this.clickByStringId("btn_finish", 2);
-		// ¼ÆËãÌáÏÖ³É¹¦ºóµÄ½ğ¶î
+		// è®¡ç®—æç°æˆåŠŸåçš„é‡‘é¢
 		b = a - 1;
-		// ×ª»»¸Ã½ğ¶îÎª×Ö·û´®
+		// è½¬æ¢è¯¥é‡‘é¢ä¸ºå­—ç¬¦ä¸²
 		va = String.valueOf(b);
 		Log.i(TAG, va);
 		values = this.getValue("textView4");
