@@ -65,7 +65,7 @@ public class BaseClass extends ActivityInstrumentationTestCase2 {
 	    Log.i(TAG, solo.getConfig().screenshotSavePath);
 		super.setUp();
 		tools.wakeUpAndUnlock(activity);
-		this.login("13810259370");
+		this.login("13716983483");
 
 	}
 
@@ -102,7 +102,7 @@ public class BaseClass extends ActivityInstrumentationTestCase2 {
 
 			} catch (Throwable e) {
 				if (i > 1) {
-					Log.i(TAG, "fail,ÖØÅÜ" + i);
+					Log.i(TAG, "fail,é‡è·‘" + i);
 					i--;
 					tearDown();
 					setUp();
@@ -156,7 +156,7 @@ public class BaseClass extends ActivityInstrumentationTestCase2 {
 		solo.clickOnScreen(745, 1552);
 		//g
 		solo.clickOnScreen(543, 1376);
-		//ÇĞ»»¼ü
+		//åˆ‡æ¢é”®
 		solo.clickOnScreen(44, 1692);
 		//1
 		solo.clickOnScreen(40, 1196);
@@ -253,7 +253,7 @@ public class BaseClass extends ActivityInstrumentationTestCase2 {
 				this.clickByStringId("login_password", 1);
 				this.enterPwdHw();
 				solo.sleep(1000);
-				solo.clickOnButton("ÓÃ»§µÇÂ¼");
+				solo.clickOnButton("ç”¨æˆ·ç™»å½•");
 				//this.clickByStringId("reset_btn", 1000);
 				View v = solo.getView("nine_con");
 				for(int i=0;i<2;i++){
@@ -268,9 +268,9 @@ public class BaseClass extends ActivityInstrumentationTestCase2 {
 			
 
 		} catch (AssertionFailedError e) {
-			Log.i(TAG, "·ÇÊ×´ÎµÇÂ¼£¡");
+			Log.i(TAG, "éé¦–æ¬¡ç™»å½•ï¼");
 			
-			if(solo.searchText("ÊÖÊÆÃÜÂë")){
+			if(solo.searchText("æ‰‹åŠ¿å¯†ç ")){
 				View v2 = solo.getView("nine_con");
 				try {
 					this.Unlock(v2);
@@ -282,7 +282,7 @@ public class BaseClass extends ActivityInstrumentationTestCase2 {
 				this.clickByStringId("login_password", 1);
 				this.enterPwdHw();
 				solo.sleep(1000);
-				solo.clickOnButton("ÓÃ»§µÇÂ¼");
+				solo.clickOnButton("ç”¨æˆ·ç™»å½•");
 			}
 		
 
