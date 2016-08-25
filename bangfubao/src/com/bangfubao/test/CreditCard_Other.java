@@ -14,36 +14,36 @@ public class CreditCard_Other extends BaseClass {
 		String values;
 		String va;
 		solo.sleep(3000);
-		// »ñÈ¡ÕËºÅ½ğ¶î
+		// è·å–è´¦å·é‡‘é¢
 		values = this.getValue("textView4");
-		// ´òÓ¡µ±Ç°½ğ¶î
+		// æ‰“å°å½“å‰é‡‘é¢
 		Log.i(TAG, values);
-		// ·Ö¸îĞ¡ÊıµãÈ¡ÕûÊı
+		// åˆ†å‰²å°æ•°ç‚¹å–æ•´æ•°
 		value = values.split("\\.");
 		a = Integer.parseInt(value[0].trim());
-		solo.searchText("ÕË»§×Ü¶î");
+		solo.searchText("è´¦æˆ·æ€»é¢");
 		solo.sleep(3);
-		solo.clickOnText("ĞÅÓÃ¿¨»¹¿î");
+		solo.clickOnText("ä¿¡ç”¨å¡è¿˜æ¬¾");
 		this.clickByStringId("tv_bankNM", 1);
-		solo.clickOnText("ÕĞÉÌÒøĞĞ");
-		this.enterValueById("edt_bankNo", "6225758328709208", 1);
-		this.enterValueById("edt_name", "Íõ¶°Ğù", 1);
+		solo.clickOnText("æ‹›å•†é“¶è¡Œ");
+		this.enterValueById("edt_bankNo", "xxxxxxxxx", 1);
+		this.enterValueById("edt_name", "xxxxxx", 1);
 		this.enterValueById("edt_payment", "10", 1);
 		this.clickByStringId("btn_code", 30000);
 		String vl = tools.getvalue("sb.txt");
 		Log.i(TAG, vl);
 		this.enterValueById("edt_code", vl, 1);
 		this.clickByStringId("btn_submit", 1);
-		if (solo.searchText("ÑéÖ¤ÂëĞ£Ñé´íÎó£¬Äú×î¶à¿ÉÒÔ³¢ÊÔ3´Î")) {
-			throw new AssertionFailedError("ÑéÖ¤ÂëĞ£Ñé´íÎó£¬Äú×î¶à¿ÉÒÔ³¢ÊÔ3´Î");
+		if (solo.searchText("éªŒè¯ç æ ¡éªŒé”™è¯¯ï¼Œæ‚¨æœ€å¤šå¯ä»¥å°è¯•3æ¬¡")) {
+			throw new AssertionFailedError("éªŒè¯ç æ ¡éªŒé”™è¯¯ï¼Œæ‚¨æœ€å¤šå¯ä»¥å°è¯•3æ¬¡");
 		} else {
 			this.clickByStringId("pay_password", 1);
 			this.enterPayPwdHw();
 			this.clickByStringId("btn_confirm", 1);
 			this.clickByStringId("btn_finish", 2);
-			// ¼ÆËãÌáÏÖ³É¹¦ºóµÄ½ğ¶î
+			// è®¡ç®—æç°æˆåŠŸåçš„é‡‘é¢
 			b = a - 10;
-			// ×ª»»¸Ã½ğ¶îÎª×Ö·û´®
+			// è½¬æ¢è¯¥é‡‘é¢ä¸ºå­—ç¬¦ä¸²
 			va = String.valueOf(b);
 			Log.i(TAG, va);
 			values = this.getValue("textView4");
