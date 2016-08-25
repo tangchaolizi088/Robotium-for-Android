@@ -1,0 +1,6 @@
+# view AndroidManifest.xml #generated:28
+-keep class com.bangfubao.utils.SmsReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:14
+-keep class com.zutubi.android.junitreport.JUnitReportTestRunner { <init>(...); }
+
